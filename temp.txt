@@ -1,0 +1,23 @@
+                            <div class="form-row">
+                               <?php if($row['input_upload_doc1']) { ?>
+                              <div class="form-group col-md-6 p-2 text-center">                
+                               <img src="./user_cv_doc/<?php echo $row["input_upload_doc1"];  ?>" alt="sig image" height="100" max-width="200">
+                              </div>
+                            <?php } ?>
+                            <div class="form-group <?php if($row["input_upload_doc1"]) echo 'col-sm-6'; else echo 'col-md-12'; ?>">                
+                                <label for="input_upload_doc1">Upload photo one</label>
+                                  <input type="file" class="form-control-file border rounded-0 p-2" id="input_upload_doc1" name="input_upload_doc1">
+                              </div>
+                            </div>
+
+                            <div class="form-row">
+                               <?php if($row['input_upload_doc2']) { ?>
+                              <div class="form-group col-md-6 p-2 text-center">                
+                               <img src="./user_cv_doc/<?php echo $row["input_upload_doc2"];  ?>" alt="sig image" height="100" max-width="200">
+                              </div>
+                            <?php } ?>
+                            <div class="form-group <?php if($row["input_upload_doc2"]) echo 'col-sm-6'; else echo 'col-md-12'; ?>">                
+                                <label for="input_upload_doc2">Upload photo one</label>
+                                  <input type="file" class="form-control-file border rounded-0 p-2" id="input_upload_doc2" name="input_upload_doc2">
+                              </div>
+                            </div>
